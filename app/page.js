@@ -5,6 +5,7 @@ import {useState} from 'react';
 
 export default function page() {
 
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
   const [img, $img] = useState('puppy-eyes');
   const [how, $how] = useState(false);
   const [p, $p] = useState(null);
@@ -29,7 +30,7 @@ export default function page() {
 
   return (
     <div className='box'>
-      <img alt='Гъмбол' className='gif' src={`/${img}.gif`} />
+      <img alt='Гъмбол' className='gif' src={`${basePath}/${img}.gif`} />
       {how ? 'Хммм, няма избор!' : 'Роси, ще излезеш ли с мен?'}
       <div className='btns'>
         <Link className='yes' href='/yay'>

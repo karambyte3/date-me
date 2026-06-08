@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function notFound() {
+export default function custom404() {
 
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
@@ -15,5 +15,5 @@ export default function notFound() {
       </Link>
     </div>
   )
-  
+
 }
