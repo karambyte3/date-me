@@ -31,7 +31,7 @@ export default function page() {
   return (
     <div className='box'>
       <img alt='Гъмбол' className='gif' src={`${basePath}/${img}.gif`} />
-      {how ? 'Хммм, няма избор!' : 'Роси, ще излезеш ли с мен?'}
+      {how ? 'Хммм, нямаш избор!' : 'Роси, ще излезеш ли с мен?'}
       <div className='btns'>
         <Link className='yes' href='/yay'>
           <button onMouseOver={() => updteImg('sparkle-eyes')} onMouseOut={() => updteImg('puppy-eyes')}>
