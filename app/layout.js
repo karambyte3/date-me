@@ -7,6 +7,7 @@ export default function layout({children}) {
   return (
     <html lang='bg'>
       <head>
+        <title>Покана за среща</title>
         <link rel='icon' type='image/png' href={`${basePath}/heart.png`} />
         <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Jua' />
       </head>
