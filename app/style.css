@@ -30,8 +30,9 @@ body {
 }
 
 .gif {
-  height: auto;
-  max-height: 50svh;
+  display: block;
+  height: min(50svh, 350px);
+  object-fit: contain;
   width: min(80vw, 350px);
 }
 
@@ -39,6 +40,7 @@ body {
   display: flex;
   gap: clamp(16px, 6vw, 40px);
   justify-content: center;
+  min-height: 72px;
   width: min(100%, 360px);
 }
 
@@ -68,6 +70,7 @@ button {
   }
 
   .gif {
+    height: min(46svh, 320px);
     width: min(86vw, 320px);
   }
 }
