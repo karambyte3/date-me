@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 export default function custom404() {
 
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
@@ -8,11 +6,11 @@ export default function custom404() {
     <div className='box'>
       <img alt='Въздишка' className='gif' src={`${basePath}/sigh.gif`} />
       Страницата не е намерена
-      <Link href='/'>
+      <a href={`${basePath}/`}>
         <button>
           Към началото
         </button>
-      </Link>
+      </a>
     </div>
   )
 
