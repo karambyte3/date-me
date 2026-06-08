@@ -15,8 +15,8 @@ export default function page() {
   }
 
   const nah = () => {
-    const x = Math.random() * 90;
-    const y = Math.random() * 90;
+    const x = 8 + Math.random() * 72;
+    const y = 8 + Math.random() * 72;
 
     $p({x: `${x}%`, y: `${y}%`});
     updteImg('unamused');
